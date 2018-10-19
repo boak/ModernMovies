@@ -1,9 +1,12 @@
 # Modern Movies
 A demo android project for browsing movie infomation written in Kotlin using MVVM architecture with the newest Jetpack components
 
+## Demo
+![img](./art/demo1.gif)
+
 ## Requirements
 
-- Android Studio 3.2.1 or newer
+- Android Studio 3.2.1 or newer\
 
 ### Getting Started
 Get an API key from [TMDB](https://developers.themoviedb.org/3/getting-started/introduction)\
