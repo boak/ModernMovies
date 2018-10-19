@@ -40,12 +40,9 @@ class MainActivity : AppCompatActivity() {
         list.adapter = adapter
 
         viewModel.getData().observe(this, Observer { movieList ->
-            movieList?.let {
-                if (it.isEmpty()) {
-                    viewModel.discover()
-                }
+            if (movieList.isEmpty()) {
+                viewModel.discover()
             }
-
             adapter.submitList(movieList!!)
         })
     }

@@ -2,7 +2,8 @@
 A demo android project for browsing movie infomation written in Kotlin using MVVM architecture with the newest Jetpack components
 
 ## Demo
-![img](./art/demo1.gif)
+<!-- ![img](./art/demo1.gif) -->
+<img src="./art/demo1.gif" height="400">
 
 ## Requirements
 

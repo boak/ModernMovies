@@ -15,7 +15,7 @@ import net.apocalypt.modernmovies.R
 import net.apocalypt.modernmovies.model.Result
 import net.apocalypt.modernmovies.ui.movie.MovieActivity
 
-class MainActivityAdapter(context: Context) : ListAdapter<Result, MainActivityAdapter.ViewHolder>(DIFF_CALLBACK) {
+class MainActivityAdapter(val ctx: Context) : ListAdapter<Result, MainActivityAdapter.ViewHolder>(DIFF_CALLBACK) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater
@@ -44,8 +44,7 @@ class MainActivityAdapter(context: Context) : ListAdapter<Result, MainActivityAd
                 }
 
                 setOnClickListener {
-                    // todo: call MovieActivity
-                    val intent = Intent(context, MovieActivity::class.java)
+                    val intent = Intent(ctx, MovieActivity::class.java)
                     intent.putExtra("movieId", result.id)
                     context.startActivity(intent)
                 }
